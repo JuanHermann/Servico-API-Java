@@ -56,7 +56,8 @@ public class LogStatusServicoNfeController {
         }
         return repository.findTop1ByEstadoSiglaOrderByDataAtualizacaoDesc(sigla);
     }
-
+    
+    //Padrão yyyy-MM-dd 2020-10-26
     @GetMapping(value = "/statusatualdata/{data}")
     public List<LogStatusServicoNfe> statusAtualData( @PathVariable String data ) {
 
